@@ -1,0 +1,22 @@
+.main-menu {
+  margin-top: 5px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-menu {
+    width: 100%;
+  }
+
+  .main-menu__list {
+    padding: 0;
+    padding-top: 9px;
+  }
+
+  .main-menu--closed .site-list {
+    display: none;
+  }
+
+  .main-menu--nojs .main-menu__list {
+    display: block;
+  }
+}

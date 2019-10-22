@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "oswald-regular";
+  src: url("../fonts/oswaldregular.woff2"),
+    url("../fonts/oswaldregular.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "oswald-medium";
+  src: url("../fonts/oswaldmedium.woff2"),
+    url("../fonts/oswaldmedium.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "oswald-regular", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  min-width: 320px;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    min-width: 767px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    min-width: 1440px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

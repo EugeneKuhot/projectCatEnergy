@@ -1,0 +1,137 @@
+.programme {
+  position: relative;
+  min-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  min-height: 480px;
+  margin-bottom: 22px;
+  box-sizing: border-box;
+}
+
+.programme__bg {
+  position: absolute;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 305px;
+  width: 100%;
+  z-index: -1;
+  margin-bottom: 50px;
+}
+
+.programme__title {
+  min-height: 80px;
+  margin: 0;
+  margin-bottom: 17px;
+  padding-top: 27px;
+  font-size: 36px;
+  line-height: 35px;
+  font-weight: normal;
+  text-transform: none;
+  height: 30px;
+}
+
+.programme__button-link {
+  color: white;
+  display: block;
+  box-sizing: border-box;
+  padding-top: 10px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .programme {
+    color: black;
+    padding-top: 36px;
+    text-align: left;
+    height: 850px;
+  }
+
+  .programme__bg {
+    background: none;
+    width: 0;
+  }
+
+  .programme__title {
+    line-height: 60px;
+    font-size: 60px;
+    width: 420px;
+    font-weight: normal;
+    height: 135px;
+    margin-bottom: 24px;
+    margin-left: 88px;
+    padding-top: 22px;
+  }
+
+  .programme__text {
+    font-size: 20px;
+    margin-bottom: 46px;
+    margin-left: 88px;
+  }
+
+  .programme-wrapper {
+    position: relative;
+  }
+
+  .programme__photo {
+    position: absolute;
+    width: 709px;
+    bottom: -532px;
+    left: 0;
+    z-index: -5;
+  }
+
+  .programme__button {
+    margin-left: 88px;
+  }
+
+  .programme__button--size {
+    width: 245px;
+    height: 52px;
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  .programme__button-link {
+    padding-top: 13px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programme {
+    padding-left: 80px;
+    height: 645px;
+  }
+
+  .programme__title {
+    padding-top: 75px;
+    margin-left: 39px;
+  }
+
+  .programme__text {
+    margin-bottom: 52px;
+    margin-left: 39px;
+  }
+
+  .programme__button {
+    margin-left: 39px;
+  }
+
+  .programme__photo {
+    width: 552px;
+    height: 499px;
+    left: 408px;
+    top: -6px;
+  }
+
+  .programme__button-link:hover {
+    background-color: #5eaa2f;
+  }
+
+  .programme__button-link:active span {
+    opacity: 0.3;
+  }
+}
